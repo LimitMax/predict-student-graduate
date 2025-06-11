@@ -39,27 +39,53 @@ Data akademik dan non-akademik siswa belum dimanfaatkan secara optimal untuk men
 
 ### Persiapan
 
-Sumber data: [....](https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv)
+Sumber data: (https://github.com/dicodingacademy/dicoding_dataset/blob/main/students_performance/data.csv)
 
 Setup environment:
-```
+===Jupyter Notebook==
 
-```
+1. Install requirments.txt ( pip3 install -r requirements.txt)
+2. Run all
+
+==Streamlit==
+1. Install requirments.txt (pip3 install -r requirements.txt)
+2. jalankan streamlit run app.py  
 
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Dasbor "Academic Performance & Retention Insights" ini adalah alat analisis untuk melacak kinerja dan status kelulusan dari 4424 mahasiswa.
+
+Tujuan utamanya adalah untuk mengidentifikasi penyebab mahasiswa gagal dalam studi. Wawasan utamanya adalah:
+1. Tingkat Dropout (DO) sangat tinggi, yaitu 32.12%, yang menjadi masalah utama.
+2. Mahasiswa yang paling berisiko DO adalah mereka yang memiliki nilai sangat rendah di semester awal (Cluster "At Risk").
+3. Terdapat korelasi kuat antara masalah finansial dengan kecenderungan mahasiswa untuk DO.
+
+Secara singkat, dasbor ini membantu manajemen untuk secara proaktif menemukan mahasiswa bermasalah—baik secara akademik maupun finansial—agar dapat memberikan dukungan yang tepat sasaran untuk mengurangi angka DO.
+
+Link Dashboard: https://public.tableau.com/app/profile/limitmax/viz/StudentAcademicDashboard/Dashboard1
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
+==Local==
+1. Clone repor berikut: https://github.com/LimitMax/predict-student-graduate.git
+2. Install requirments.txt (pip3 install -r requirements.txt)
+3. jalankan streamlit run app.py 
+4. Pilih menu prediction
+5. Isi data yang diperlukan
+6. Lakukan prediksi & lihat hasilnya
 
-```
-
-```
+==Online==
+1. Masuk link: https://predictstudent.streamlit.app/
+2. Pilih menu prediction
+3. Isi data yang diperlukan
+4. Lakukan prediksi & lihat hasilnya
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Proyek ini bertujuan untuk membangun sebuah model dan dashboard untuk memantau performa mahasiswa guna mencegah tingginya angka mahasiswa yang dropout. Hasilnya, proyek berhasil menghasilkan model prediktif yang mampu mengidentifikasi status kelulusan mahasiswa berdasarkan data historis, serta menyediakan dashboard interaktif yang memberikan wawasan terkait kinerja akademik mahasiswa.
+
+Dengan demikian, proyek berhasil mencapai tujuannya dalam membantu pihak institusi pendidikan untuk melakukan deteksi dini terhadap mahasiswa yang berisiko tidak lulus, sehingga dapat dilakukan intervensi lebih cepat dan tepat. Ke depannya, model ini dapat terus dikembangkan dengan data yang lebih luas dan diperbarui secara berkala agar hasil prediksi semakin akurat dan relevan.
 
 ### Rekomendasi Action Items
-Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+Berikut beberapa rekomendasi action guna menyelesaikan permasalahan yang dihadapi perusahaan/company edutech:
+- Terapkan program bimbingan akademik, tutoring tambahan, dan sistem monitoring performa sejak awal semester.
+- Perluas Program Beasiswa untuk Mahasiswa
+- Evaluasi dan Tingkatkan Kualitas Pengajaran Semester Awal, dikarenakan Rata-rata nilai semester 2 menurun dibandingkan semester 1
+- Mayoritas orang tua berasal dari latar belakang pekerjaan yang mungkin kurang familiar dengan peran pendukung pendidikan,Buat program edukasi orang tua dan libatkan mereka melalui forum komunikasi berkala.
